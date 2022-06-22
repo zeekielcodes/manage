@@ -57,13 +57,19 @@ nav button {
     align-items: center;
     padding: 7em 10em;
     background: url(./images/bg-tablet-pattern.svg);
-    background-position: right;
+    
+    background-position-y: -110%;
+    background-position-x: 110%;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 50%;
 }
 
 .hero {
     width: 50%;
+}
+
+.toggle {
+    display: none;
 }
 
 .hero h1 {
@@ -94,10 +100,11 @@ nav button {
 .features {
     display: flex;
     padding: 2em 10em;
-    /* background: url(./images/bg-simplify-section-desktop.svg);
+    background: url(./images/bg-tablet-pattern.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: left; */
+    background-position-y: 0%;
+    background-position-x: -40%;
 }
 
 .first{
@@ -134,6 +141,8 @@ nav button {
     background: hsl(12, 88%, 59%);
     border-radius: 1.5em;
     color: white;
+    font-weight: 700;
+    font-family: Be Vietnam Pro;
 }
 
 .list-item {
@@ -287,4 +296,137 @@ form p {
     margin-top: 2em;
     font-size: .8em;
     color: hsl(227, 12%, 61%);
+}
+
+
+@media (max-width:768px) {
+   .container {
+        padding: 2em;
+    }
+
+    .logopen {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .toggle {
+        display: block;
+    }
+
+    nav {
+        display: block;
+        background: rgba(255,255, 255, .6);
+    }
+
+    .banner {
+        padding: 0;
+        flex-direction: column-reverse;
+        background: unset;
+        /* background:; */
+    }
+
+
+
+    nav button {
+        display: none;
+    }
+
+    .mobile {
+        background: hsl(227, 12%, 61%);
+        text-align: center;
+        padding: 3em;
+        margin-top: 1em;
+        width: 100%;
+        display: none;
+
+    }
+
+    nav ul li {
+        display: block;
+        /* margin: 1em 0; */
+        padding: 1em;
+        font-weight: 700;
+    }
+
+    .hero, .hero-image {
+        width: 100%;
+        text-align: center;
+        padding: 3.5em 2em;
+    }
+
+    .hero p{
+        width: 100%;
+    }
+
+    .hero-image {
+        background:  url("./images/bg-tablet-pattern.svg");
+        /* background-repeat: no-repeat; */
+        background-position: 60%;
+        background-size: contain;
+    }
+
+    .hero-image img {
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .features {
+        display: block;
+        padding: 4em 2em;
+        /* text-align: center; */
+    }
+
+
+
+    .first, .second{
+        width: 100%;
+       
+    }
+
+    .first {
+        text-align: center;
+        margin-bottom: 2em;
+    }
+
+    .first p {
+        width: 90%;
+    }
+
+    .list {
+        flex-direction: row;
+        padding: unset;
+        display: block;
+    }
+
+    /* h3 {
+        background:  hsl(13, 100%, 96%);
+    } */
+
+    .simplify {
+        padding: 4em;
+        display: block;
+        text-align: center;
+    }
+
+    .simplify h6 {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    footer {
+        flex-direction: column-reverse;
+        padding: 2em;
+        text-align: center;
+    }
+
+    footer form, .footer-links, .footer-logo {
+        width: 100%;
+    }
+
+    .footer-links {
+        justify-content: space-between;
+        margin: 2em 0;
+    }
 }

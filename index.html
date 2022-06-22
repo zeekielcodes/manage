@@ -17,8 +17,11 @@
 <body>
   <main>
     <nav class="container">
+      <div class="logopen">
       <img src="./images/logo.svg" alt="">
-      <ul>
+      <img src="./images/icon-hamburger.svg" class="toggle" alt="">
+      </div>
+      <ul class="mobile">
         <li><a href="#">  Pricing</a></li>
         <li><a href="#">  Product</a></li>
         <li><a href="#">  About Us</a></li>
@@ -167,5 +170,18 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">The Face</a>.
   </div>
+  <script>
+    const openn = document.querySelector(".toggle");
+    const menu = document.querySelector(".mobile");
+    openn.addEventListener("click", () => {
+      menu.style.display === "none"
+        ? (menu.style.display = "block")(
+            openn.setAttribute("src", "./images/icon-close.svg")
+          )
+        : (menu.style.display = "none")(
+            openn.setAttribute("src", "./images/icon-hamburger.svg")
+          );
+    });
+  </script>
 </body>
 </html>
