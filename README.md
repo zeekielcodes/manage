@@ -9,8 +9,8 @@ This is my solution to the [Manage landing page challenge on Frontend Mentor](ht
 
 ### Links
 
-- Solution URL: [Check solution]()
-- Live Site URL: [Visit live site]()
+- Solution URL: [Check solution](https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5/hub/manage-landing-page-wOlHTOtSS4)
+- Live Site URL: [Visit live site](thefacemanage.vercel.app)
 
 
 ### Built with
