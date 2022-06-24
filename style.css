@@ -121,8 +121,8 @@ nav button {
     background: url(./images/bg-tablet-pattern.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position-y: 0%;
-    background-position-x: -40%;
+    background-position-y: -90%;
+    background-position-x: -100%;
 }
 
 .first{
