@@ -435,7 +435,7 @@ form p {
     .first {
         text-align: center;
         margin-bottom: 2em;
-        background: url("./images/bg-tablet-pattern.svg");
+        /* background: url("./images/bg-tablet-pattern.svg"); */
         background-position: 170%;
         background-size: contain;
         background-repeat: no-repeat;
@@ -510,6 +510,11 @@ form p {
 
     .hero p {
         width: 100%;
+    }
+
+    .quote {
+        width: 90%;
+        margin: 0 1em;
     }
 
 }
